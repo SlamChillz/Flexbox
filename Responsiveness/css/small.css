@@ -1,0 +1,420 @@
+/* Small screens */
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'playfair Display', 'open sans', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 3.5rem;
+}
+
+.nav-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.nav-icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0rem;
+}
+
+.head {
+    background-image: url('../images/hero-bg.jpg');
+    height: 800px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Screen below 600px */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .head {
+        display: flex;
+        justify-content: center;
+        height: 450px;
+        align-items: flex-end;
+        padding: 1.rem 3rem;
+    }
+    .head-text {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .head-text p {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 2.2rem;
+        color: white;
+        letter-spacing: 0.2rem;
+        font-weight: lighter;
+        margin-bottom: 0.7rem;
+    }
+    .head-text h2 {
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 3.5rem;
+        letter-spacing: 0.4rem;
+        color: white;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.5rem solid white;
+        line-height: 3rem;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    .head-icons {
+        display: none;
+    }
+    /* Services */
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0rem;
+    }
+    .services h5, h1, p, div {
+        display: flex;
+        margin: 1.2rem 0rem;
+        width: 80%;
+        justify-content: center;
+    }
+    .services h5 {
+        color: gray;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+    .services h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .services p {
+        font-size: 1.7rem;
+        font-weight: lighter;
+        text-align: center;
+        word-spacing: 0.2rem;
+        color: gray;
+        line-height: 2.5rem;
+    }
+    .book {
+        padding: 1.2rem 3rem;
+        background-color: #E71A23;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    /* Reach out section */
+    .reach {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 3rem;
+        background-color: white;
+    }
+
+    .reach1, .reach2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reach-image1, .reach-image2 {
+        display: flex;
+        height: 300px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .reach-image1 {
+        background-image: url('../images/billionphotos1882993.jpg');
+    }
+    .reach-image2 {
+        background-image: url('../images/billionphotos1883011.jpg');
+    }
+    .reach-para {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 1.1rem;
+        width: 83%;
+        font-weight: lighter;
+        line-height: 1.7rem;
+        color: #796763;
+
+    }
+    .help {
+        display: flex;
+        flex-direction: column;
+    }
+    .help h3 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: 1.0rem;
+        text-align: center;
+    }
+    .help h4 {
+        font-size: 1.5rem;
+        color: #E71A23;
+        text-align: center;
+    }
+    /* Quality */
+    .quality {
+        display: flex;
+        flex-direction: column;
+        padding: 1.0rem 3rem;
+        align-items: center;
+        background-color: #D9D7DC;
+    }
+    .quality-image {
+        height: 30rem;
+        background-image: url("../images/billionphotos1079319min.png");
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 3rem;
+    }
+    .quality-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .quality-text h1 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3rem;
+        width: 100%;
+        color: #104E92;
+        padding: 2rem 0rem;
+        border-bottom: 0.5rem solid #E71A23;
+    }
+    .quality-text p {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        letter-spacing: 0rem;
+        width: 100%;
+        font-size: 1.1rem;
+        color: #796763;
+    }
+    .quality div {
+        display: flex;
+        justify-content: flex-start;
+    }
+    /* Services with icons */
+    .service {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 2.5rem;
+        align-items: center;
+        background-color: white;
+    }
+    .service h1 {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 3.2rem;
+    }
+
+    .service-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-option {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        background: #E71A23;
+        border-radius: 50%;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        background: #E71A23;
+        border-radius: 50%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .service-icon1 {
+        background-image: url("../images/painting.svg");
+    }
+    .service-icon2 {
+        background-image: url("../images/electric.svg");
+    }
+    .service-icon3 {
+        background-image: url("../images/repair.svg");
+    }
+    .service-option h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .service-option p {
+        width: 100%;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #796763;
+    }
+    /* About Us */
+    .about {
+        margin-top: 1.5rem;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #104E92;
+    }
+
+    .about-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-us, .plumb, .plumb-service {
+        display: flex;
+        justify-content: flex-start;
+        color: white;
+        margin: 0.2rem 0rem;
+    }
+    .about-us {
+        font-size: 2rem;
+    }
+    .plumb {
+        font-size: 4rem;
+    }
+    .about-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .plumb-service {
+        font-size: 4.5rem;
+        font-weight: bolder;
+    }
+    .about-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-images div {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .about-images1 {
+        background-image: url("../images/frg.jpg");
+    }
+    .about-images2 {
+        background-image: url("../images/rg.jpg");
+    }
+    .about-images3 {
+        background-image: url("../images/billionphotos1882993.jpg");
+    }
+    .about-images4 {
+        background-image: url("../images/billionphotos1882951.jpg");
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2.5rem;
+        background-color: white;
+    }
+
+    .contact .todo {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .contact .text {
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        line-height: 3rem;
+        color: #796763;
+    }
+
+    .contact .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call {
+        background-color: white;
+        color: black;
+        padding: 1.2rem 4rem;
+        border: 1px solid black;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 1rem 3rem;
+        background-color: #333333;
+    }
+    .footer .up {
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin-bottom: 3rem;
+    }
+    .footer .down {
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin-top: 3rem;
+    }
+
+    .down a {
+        color: #336CC4;
+        margin: 0rem 0.3rem;
+    }
+}
